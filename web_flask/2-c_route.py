@@ -30,7 +30,7 @@ def c_text(text):
     A function that replaces any text followed by c with an underscore
     by a space and returns the whole text
     """
-    text = escape(text).replace('_', ' ')
+    text = text.replace('_', ' ')
     return "C {}".format(text)
 
 
