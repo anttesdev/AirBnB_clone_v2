@@ -69,7 +69,10 @@ def number_odd_or_even(n):
     A function that will render an HTML
     page based on whether the number is odd or even
     """
-    number_type = "even" if n % 2 == 0 else "odd"
+    if n % 2 == 0:
+        number_type = "even"
+    else:
+        number_type = "odd"
     return render_template('number_odd_or_even.html', num=n,
                            number_type=number_type)
 
