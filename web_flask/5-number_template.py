@@ -60,7 +60,7 @@ def number_template(n):
     A function that renders an HTML
     page if n is an integer
     """
-    return render_template('5-number.html', n=n)
+    return render_template('5-number.html', num=n)
 
 
 if __name__ == '__main__':
